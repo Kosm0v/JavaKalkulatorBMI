@@ -16,6 +16,8 @@ public class MainService {
                 return calculatorVO.getValue1() / calculatorVO.getValue2();
             case "-":
                 return calculatorVO.getValue1() - calculatorVO.getValue2();
+            case ".": // liczenie bmi (menu po wybraniu opcji "bmi" zwraca ".")
+                return calculatorVO.getValue1() / (calculatorVO.getValue2()*calculatorVO.getValue2());
             default:
                 return 0;
         }

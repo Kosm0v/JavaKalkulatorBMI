@@ -19,10 +19,10 @@
         <div class="inputs">
             <div class="inputs-i">
                 <div class="input-1 a">
-                    <input class="form-control a" placeholder="wartosc 1" type="number" step="0.01" required name="value1" th:value="${value1}">
+                    <input class="form-control a" placeholder="waga(kg) lub wartosc 1" type="number" step="0.01" required name="value1" th:value="${value1}">
                 </div>
                 <div class="input-2">
-                    <input  class="form-control a" placeholder="wartosc 2" type="number" step="0.01" required name="value2" th:value="${value2}">
+                    <input  class="form-control a" placeholder="wzrost(m) lub wartosc 2" type="number" step="0.01" required name="value2" th:value="${value2}">
                 </div>
             </div>
             <div class="operators">
@@ -32,6 +32,7 @@
                     <option value="-">-</option>
                     <option value="/">/</option>
                     <option value="*">*</option>
+                    <option value=".">bmi</option>
                 </select>
             </div>
         </div>
